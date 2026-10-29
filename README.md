@@ -41,7 +41,28 @@
 
 # Essential Guidelines
 
-For hosting options other than the ones provided, such as [IPFS Deployment](https://ipfs.thirdwebcdn.com/ipfs/QmfGUuMzLqHyAybnUsPG6aMwQ241V6Q69AmPxCWsVsTDcD) or [Vercel Deployment](https://tally-zero-preview.vercel.app/), we suggest visiting [Web3Modal](https://cloud.walletconnect.com/sign-in) to establish a new project. Subsequently, create a `.env` or `.env.local` file, or input it as an environment variable in your hosting provider. Ensure the naming convention is `NEXT_PUBLIC_WEB3STORAGE_PROJECT_ID`.
+The app can run in read-only mode without environment variables. To enable wallet connection, create a project at [WalletConnect Cloud](https://cloud.walletconnect.com/sign-in), then set `NEXT_PUBLIC_WEB3STORAGE_PROJECT_ID` in `.env.local` or in your hosting provider.
+
+## Governance history snapshots
+
+The Ring DAO page on Blast offers two explicit data sources. **Backup data**
+loads `data/governance/blast-81457-ring-dao.json` without making an RPC request,
+so proposals remain available when the chain is offline. **Live RPC rescan**
+ignores the snapshot and scans `ProposalCreated` events again from the contract
+deployment block, updating the table as batches arrive.
+
+Refresh the committed snapshot before deploying when needed:
+
+```bash
+pnpm sync:blast-governance
+```
+
+The command writes a resumable `.checkpoint` file while scanning and produces
+the JSON snapshot when complete. Set `BLAST_RPC_URL` to use a different archive
+RPC. Commit the generated JSON with the application; Vercel needs no database
+or server-side function for historical data. To use a different RPC for live
+browser sync on Vercel, set `NEXT_PUBLIC_BLAST_RPC_URL` in the project
+environment variables.
 
 The project's pages are located in the `/app` directory, with components organized as follows:
 

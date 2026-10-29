@@ -3,12 +3,11 @@ import { Address } from "@/types/search";
 import { providers } from "ethers";
 import { useEffect, useRef, useState } from "react";
 
-const MAX_BLOCK_DIFF = 128;
-
 export const useDeploymentBlock = (
   provider: providers.Provider,
   contractAddress: Address | undefined,
-  deploymentBlock: number
+  deploymentBlock: number,
+  cachedDeploymentBlock?: number
 ): UseDeploymentBlockResult => {
   const cancelSearchRef = useRef(false);
   const [success, setSuccess] = useState(false);
@@ -32,6 +31,14 @@ export const useDeploymentBlock = (
 
       cancelSearchRef.current = false;
 
+      if (cachedDeploymentBlock !== undefined) {
+        setBlockNumber(cachedDeploymentBlock);
+        setCurrentSearchBlock(cachedDeploymentBlock);
+        setSuccess(true);
+        setDeploymentProgress(100);
+        return;
+      }
+
       const currentCode = await provider.getCode(contractAddress);
       if (currentCode === "0x") {
         throw new Error("Contract not currently deployed");
@@ -43,11 +50,6 @@ export const useDeploymentBlock = (
       let [lowerBound, upperBound] = [0, currentBlockNumber];
       let deployedBlockNumber: number | null = null;
       const maxIterations = Math.ceil(Math.log2(currentBlockNumber));
-
-      if (currentBlockNumber - deploymentBlock > MAX_BLOCK_DIFF) {
-        const lastBlock = currentBlockNumber - MAX_BLOCK_DIFF;
-        lowerBound = lastBlock;
-      }
 
       try {
         for (let i = 0; i < maxIterations && !cancelSearchRef.current; i++) {
@@ -89,10 +91,14 @@ export const useDeploymentBlock = (
       }
     };
 
-    findDeploymentBlock();
+    findDeploymentBlock().catch((error) => {
+      console.warn("Error finding deployment block:", error);
+      setSuccess(false);
+      setDeploymentProgress(0);
+    });
 
     return cancelSearch;
-  }, [contractAddress, provider, deploymentBlock]);
+  }, [contractAddress, provider, deploymentBlock, cachedDeploymentBlock]);
 
   return {
     blockNumber,

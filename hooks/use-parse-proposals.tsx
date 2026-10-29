@@ -25,6 +25,16 @@ export function useParseProposals(
       );
 
       const proposalPromises = proposals.map(async (proposal) => {
+        if (proposal.isHistorical) {
+          return {
+            ...proposal,
+            values: proposal.values.map((value) => value.toString()),
+            startBlock: proposal.startBlock.toString(),
+            endBlock: proposal.endBlock.toString(),
+            contractAddress,
+          };
+        }
+
         try {
           const proposalState = await governorContract.state(proposal.id);
           return {

@@ -14,15 +14,20 @@ import {
 interface ContractCardProps {
   form: UseFormReturn<z.infer<typeof formSchema>>;
   progress: number;
+  governorName?: string;
 }
 
-export default function ContractCard({ form, progress }: ContractCardProps) {
+export default function ContractCard({
+  form,
+  progress,
+  governorName,
+}: ContractCardProps) {
   return (
     <Card className="rounded-xl">
       <CardHeader>
         <CardTitle>
           <div className="flex items-center justify-between">
-            <span>Search for a contract</span>
+            <span>{governorName || "Search for a contract"}</span>
           </div>
         </CardTitle>
         <CardDescription>

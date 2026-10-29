@@ -12,6 +12,19 @@ export type Proposal = {
   endBlock: ethers.BigNumber;
   description: string;
   state: number;
+  isHistorical?: boolean;
+};
+
+export type GovernanceSnapshot = {
+  version: number;
+  networkId: number;
+  chainName: string;
+  contractAddress: string;
+  governorName: string;
+  deploymentBlock: number;
+  syncedToBlock: number;
+  syncedAt: string;
+  proposals: Array<Proposal & { eventBlock: number; transactionHash: string }>;
 };
 
 export type UseSearchProposals = (
@@ -19,10 +32,14 @@ export type UseSearchProposals = (
   contract: Address | undefined,
   blockRange: number,
   startingBlock: number | null,
-  enabled: boolean
+  enabled: boolean,
+  networkId?: number,
+  snapshot?: GovernanceSnapshot,
+  snapshotOnly?: boolean
 ) => {
   proposals: Proposal[];
   searchProgress: number;
+  syncError: string | null;
 };
 
 export type ParsedProposal = {
