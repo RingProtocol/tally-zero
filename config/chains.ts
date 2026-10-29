@@ -32,8 +32,33 @@ import {
   skaleEuropa,
   songbird,
 } from "wagmi/chains";
+import { env } from "../env";
+
+const blastRpcUrl = env.NEXT_PUBLIC_BLAST_RPC_URL || "https://rpc.blast.io";
+
+// Blast is not included in the wagmi version used by this project yet.
+// Keep the definition local so read-only RPC queries and wallet switching both
+// use the canonical Blast mainnet configuration.
+export const blast = {
+  id: 81457,
+  name: "Blast",
+  network: "blast",
+  nativeCurrency: {
+    decimals: 18,
+    name: "Ether",
+    symbol: "ETH",
+  },
+  rpcUrls: {
+    default: { http: [blastRpcUrl] },
+    public: { http: [blastRpcUrl] },
+  },
+  blockExplorers: {
+    default: { name: "Blastscan", url: "https://blastscan.io" },
+  },
+} as const;
 
 export const chains = [
+  blast,
   arbitrum,
   arbitrumGoerli,
   aurora,

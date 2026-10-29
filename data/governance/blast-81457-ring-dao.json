@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "networkId": 81457,
+  "chainName": "Blast",
+  "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+  "governorName": "Ring DAO",
+  "deploymentBlock": 706250,
+  "syncedToBlock": 42240859,
+  "syncedAt": "2026-10-29T23:00:40.007Z",
+  "proposals": [
+    {
+      "id": "1",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0xfAa6F9a0c3750daA6aDdecc506e13038b297E06D",
+      "targets": ["0x4300000000000000000000000000000000000004"],
+      "values": ["0"],
+      "signatures": [""],
+      "calldatas": [
+        "0xa9059cbb000000000000000000000000264e7bbc1011e9b740b6a46371f68b085a805c89000000000000000000000000000000000000000000000000002386f26fc10000"
+      ],
+      "startBlock": "707593",
+      "endBlock": "765193",
+      "description": "# Withdraw 0.01 WETH from Timelock\nWithdraw 0.01 WETH from Timelock.",
+      "state": 0,
+      "eventBlock": 707592,
+      "transactionHash": "0x03395920c015c6f44d1f839e474afb4e25abbdeacec4c39b16307653f121b8f5"
+    },
+    {
+      "id": "2",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x264E7Bbc1011E9B740B6a46371F68B085A805C89",
+      "targets": ["0x4300000000000000000000000000000000000004"],
+      "values": ["0"],
+      "signatures": [""],
+      "calldatas": [
+        "0xa9059cbb000000000000000000000000264e7bbc1011e9b740b6a46371f68b085a805c89000000000000000000000000000000000000000000000000002386f26fc10000"
+      ],
+      "startBlock": "707743",
+      "endBlock": "765343",
+      "description": "# Withdraw 0.01 WETH from Timelock (2)\nWithdraw 0.01 WETH from Timelock (2).",
+      "state": 7,
+      "eventBlock": 707742,
+      "transactionHash": "0x02866d6493a38203fdcf1ff53bc051b60a11133981989ba315b252b6b84b31f1"
+    },
+    {
+      "id": "3",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x264E7Bbc1011E9B740B6a46371F68B085A805C89",
+      "targets": ["0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C"],
+      "values": ["0"],
+      "signatures": [""],
+      "calldatas": [
+        "0xe6eb982f0000000000000000000000007d80c9422bcb6809ded28acd9916d647cafd484f"
+      ],
+      "startBlock": "812654",
+      "endBlock": "870254",
+      "description": "# Revoke governor role of old Timelock (0x7D80......d484f)\nBy revoking governor role of old Timelock (0x7D80c9422Bcb6809DEd28acD9916d647caFd484f), Ring Dao becomes the only governor of Few Factory (0x455b20131D59f01d082df1225154fDA813E8CeE9).",
+      "state": 7,
+      "eventBlock": 812653,
+      "transactionHash": "0x992d46b329e67f879456c4ab8f9602def418a9ca95647449c64a47ea204d2af0"
+    },
+    {
+      "id": "4",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x264E7Bbc1011E9B740B6a46371F68B085A805C89",
+      "targets": [
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xF472257569De875E1CD98Fd42e17298733821Ef1",
+        "0x0c69540c58804a6dD581EC2c6d4cfE9949F486d3"
+      ],
+      "values": ["0", "0", "0", "0", "0", "0"],
+      "signatures": ["", "", "", "", "", ""],
+      "calldatas": [
+        "0x261707fa000000000000000000000000c932317385fdc794633f612874bd687ea987b151",
+        "0x10511f96000000000000000000000000c932317385fdc794633f612874bd687ea987b151",
+        "0x261707fa00000000000000000000000057a6ccb2d5663ef874c29b161dd7907c7673feb0",
+        "0x10511f9600000000000000000000000057a6ccb2d5663ef874c29b161dd7907c7673feb0",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d"
+      ],
+      "startBlock": "1893569",
+      "endBlock": "1951169",
+      "description": "# Introducing Duo Exchange\nRing Dao is proposing a simple but novel interest rate swap protocol, called Duo Exchange ([<u>https://duo.exchange</u>](https://duo.exchange)). This protocol allows LPs to access (1) fixed rate yield until maturity and (2) variable but potentially higher yield compared to the yield source.\n\n\n\nBlast brought WETH and USDB with native yield. Particle and Ring witnessed the urge to lock a fixed interest rate upfront. Also, liquidity providers are looking for a safe way to generate higher return, while keeping the principal intact at all times.\n\n\n\nThis protocol is tailored specifically for the yield management need, with these features:\n\n\\- LP with single sided token\n\n\\- No impermanent loss\n\n\\- No lock up, withdraw any time\n\n\\- No risk on the principal\n\n\n\nWith this simple protocol, it unlocks a wide range of product offerings:\n\n\\- Buy Now Get Later (with discount)\n\n\\- Lock in fixed interest rate\n\n\\- LP to earn higher rate over time\n\n\\- Manage liquidity positions\n\n\n\nThis protocol is co-developed with the Particle team ([<u>https://particle.trade</u>](https://particle.trade)), which is also a Blast Big Bang competition winner.\n\n\n\nTechnical documentation and audit reports can be accessed at [<u>https://particle-1.gitbook.io/duo</u>](https://particle-1.gitbook.io/duo).\n\n\n\nIn order to manage yield, Duo Exchange’s Yield Manager module needs to have the minter and burner access from Few Wrapped Token. In the contract design, Yield Manager has a clear spend limit that will not exceed a capped yield rate. Also, timelock revokes Yield Manager’s governor role (left it with a guardian role) for maximum security measure.\n\nHere are actions this proposal need to take:\n\n1. Few Factory Core grants **minter** to Yield Manager (for WETH)\n2. Few Factory Core grants **minter** to Yield Manager (for USDB)\n3. Few Factory Core grants **burner** to Yield Manager (for WETH)\n4. Few Factory Core grants **burner** to Yield Manager (for USDB)\n5. WETH Yield Manager Core **revokes** Multisig’s **governor role**\n6. USDB Yield Manager Core **revokes** Multisig’s **governor role**\n\n\n\nBlast Mainnet Deployments:\n\nYield Manager (for WETH): 0xc932317385fDc794633f612874BD687eA987B151\n\nYield Manager (for USDB): 0x57A6CcB2d5663eF874c29b161dD7907c7673feb0\n\nWETH Yield Manager Core: 0xF472257569De875E1CD98Fd42e17298733821Ef1\n\nUSDB Yield Manager Core: 0x0c69540c58804a6dD581EC2c6d4cfE9949F486d3",
+      "state": 7,
+      "eventBlock": 1893568,
+      "transactionHash": "0x329a7b1ffa52d6653dc330888103e1aa367c7b9da704797588061238fcf32cd0"
+    },
+    {
+      "id": "5",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x264E7Bbc1011E9B740B6a46371F68B085A805C89",
+      "targets": [
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0x0a14658c3EB6A5Aa16e1d51a99c434C5aEa5B371",
+        "0x04f04e28bf8B44495604FE68046C57e435b5C22B",
+        "0x4230da5d79D7503a080684564BA30dD9f0F74020",
+        "0xe96b3e15384EA4D41f7eBFdDD0001C6458094492"
+      ],
+      "values": ["0", "0", "0", "0", "0", "0", "0", "0"],
+      "signatures": ["", "", "", "", "", "", "", ""],
+      "calldatas": [
+        "0x261707fa000000000000000000000000abf868bbe80550dc2ee4f8dffcb06a5eb9b0760e",
+        "0x10511f96000000000000000000000000abf868bbe80550dc2ee4f8dffcb06a5eb9b0760e",
+        "0x261707fa000000000000000000000000bc65c01680e09fe14f466b00cc2a9248a022f101",
+        "0x10511f96000000000000000000000000bc65c01680e09fe14f466b00cc2a9248a022f101",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d"
+      ],
+      "startBlock": "2436003",
+      "endBlock": "2493603",
+      "description": "# Upgrade Duo Exchange to V2 with Duo ETH and Duo USD\nThis proposal updates Duo Exchange to V2 with a better interest rate estimation.\n\nAlso, this proposal introduces Duo ETH (DETH) and Duo USD (DUSD).\n\n\n\nHere are actions this proposal need to take:\n\n1. Few Factory Core grants **minter** to Yield Manager (for WETH)\n2. Few Factory Core grants **minter** to Yield Manager (for USDB)\n3. Few Factory Core grants **burner** to Yield Manager (for WETH)\n4. Few Factory Core grants **burner** to Yield Manager (for USDB)\n5. WETH Yield Manager Core **revokes** Multisig’s **governor role**\n6. USDB Yield Manager Core **revokes** Multisig’s **governor role**\n7. Duo ETH Asset Token Core **revokes** Multisig’s **governor role**\n8. Duo USD Asset Token Core **revokes** Multisig’s **governor role**\n\nBlast Mainnet Deployments:\n\nYield Manager (for WETH): 0xabF868bbe80550DC2EE4F8dFfcb06A5eb9B0760E\n\nYield Manager (for USDB): 0xBc65c01680E09FE14F466B00Cc2A9248a022F101\n\nWETH Yield Manager Core: 0x0a14658c3EB6A5Aa16e1d51a99c434C5aEa5B371\n\nUSDB Yield Manager Core: 0x04f04e28bf8B44495604FE68046C57e435b5C22B\n\nDuo ETH Asset Token: 0x1Da40C742F32bBEe81694051c0eE07485fC630f6\n\nDuo USD Asset Token: 0x1A3D9B2fa5c6522c8c071dC07125cE55dF90b253\n\nDuo ETH Asset Token Core: 0x4230da5d79D7503a080684564BA30dD9f0F74020\n\nDuo USD Asset Token Core: 0xe96b3e15384EA4D41f7eBFdDD0001C6458094492",
+      "state": 3,
+      "eventBlock": 2436002,
+      "transactionHash": "0xac7afea251cf594a368238880baaa26ed14267405a37335fc4f952b4bbfff34c"
+    },
+    {
+      "id": "6",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0x0a14658c3EB6A5Aa16e1d51a99c434C5aEa5B371",
+        "0x04f04e28bf8B44495604FE68046C57e435b5C22B",
+        "0x4230da5d79D7503a080684564BA30dD9f0F74020",
+        "0xe96b3e15384EA4D41f7eBFdDD0001C6458094492"
+      ],
+      "values": ["0", "0", "0", "0", "0", "0", "0", "0"],
+      "signatures": ["", "", "", "", "", "", "", ""],
+      "calldatas": [
+        "0x261707fa000000000000000000000000abf868bbe80550dc2ee4f8dffcb06a5eb9b0760e",
+        "0x10511f96000000000000000000000000abf868bbe80550dc2ee4f8dffcb06a5eb9b0760e",
+        "0x261707fa000000000000000000000000bc65c01680e09fe14f466b00cc2a9248a022f101",
+        "0x10511f96000000000000000000000000bc65c01680e09fe14f466b00cc2a9248a022f101",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d"
+      ],
+      "startBlock": "2501260",
+      "endBlock": "2558860",
+      "description": "# Upgrade Duo Exchange to V2 with Duo ETH and Duo USD\nThis proposal updates Duo Exchange to V2 with a better interest rate estimation.\n\nAlso, this proposal introduces Duo ETH (DETH) and Duo USD (DUSD).\n\nHere are actions this proposal need to take:\n\n1. Few Factory Core grants **minter** to Yield Manager (for WETH)\n2. Few Factory Core grants **minter** to Yield Manager (for USDB)\n3. Few Factory Core grants **burner** to Yield Manager (for WETH)\n4. Few Factory Core grants **burner** to Yield Manager (for USDB)\n5. WETH Yield Manager Core **revokes** Multisig’s **governor role**\n6. USDB Yield Manager Core **revokes** Multisig’s **governor role**\n7. Duo ETH Asset Token Core **revokes** Multisig’s **governor role**\n8. Duo USD Asset Token Core **revokes** Multisig’s **governor role**\n\nBlast Mainnet Deployments:\n\nYield Manager (for WETH): 0xabF868bbe80550DC2EE4F8dFfcb06A5eb9B0760E\n\nYield Manager (for USDB): 0xBc65c01680E09FE14F466B00Cc2A9248a022F101\n\nWETH Yield Manager Core: 0x0a14658c3EB6A5Aa16e1d51a99c434C5aEa5B371\n\nUSDB Yield Manager Core: 0x04f04e28bf8B44495604FE68046C57e435b5C22B\n\nDuo ETH Asset Token: 0x1Da40C742F32bBEe81694051c0eE07485fC630f6\n\nDuo USD Asset Token: 0x1A3D9B2fa5c6522c8c071dC07125cE55dF90b253\n\nDuo ETH Asset Token Core: 0x4230da5d79D7503a080684564BA30dD9f0F74020\n\nDuo USD Asset Token Core: 0xe96b3e15384EA4D41f7eBFdDD0001C6458094492",
+      "state": 7,
+      "eventBlock": 2501259,
+      "transactionHash": "0xe4153073cd398f9176cd765988532c0a51a112866a0fe1d3a9d771e1168fb34c"
+    },
+    {
+      "id": "7",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C"
+      ],
+      "values": ["0", "0", "0", "0", "0", "0", "0", "0"],
+      "signatures": ["", "", "", "", "", "", "", ""],
+      "calldatas": [
+        "0x261707fa00000000000000000000000008b939da28c97afa6664ec49ad5be51805ebbb36",
+        "0x10511f9600000000000000000000000008b939da28c97afa6664ec49ad5be51805ebbb36",
+        "0x261707fa000000000000000000000000a625b1e6686e8ceadd88afac8e44365005c3dbc4",
+        "0x10511f96000000000000000000000000a625b1e6686e8ceadd88afac8e44365005c3dbc4",
+        "0x261707fa00000000000000000000000022597493c61c6d766f78f50a98fbd83f7de9f6b1",
+        "0x10511f9600000000000000000000000022597493c61c6d766f78f50a98fbd83f7de9f6b1",
+        "0x261707fa0000000000000000000000001a540c1a1a67bb7dee573a1bafd30007862ba02b",
+        "0x10511f960000000000000000000000001a540c1a1a67bb7dee573a1bafd30007862ba02b"
+      ],
+      "startBlock": "2697830",
+      "endBlock": "2755430",
+      "description": "# Supporting multiple modes in Duo Exchange (p1)\nThis proposal enables more modes in Duo Exchange.\n\n\n\nHere are actions this proposal need to take (part 1):\n\n1. Few Factory Core grants **minter/burner** to Yield Manager (WETH 90D)\n2. Few Factory Core grants **minter/burner** to Yield Manager (USDB 90D)\n3. Few Factory Core grants **minter/burner** to Yield Manager (WETH Yield-Point Swap)\n4. Few Factory Core grants **minter/burner** to Yield Manager (USDB Yield-Point Swap)",
+      "state": 2,
+      "eventBlock": 2697829,
+      "transactionHash": "0x149bb0dde2bc92f72a28a283e09af8611e2cb25e7941dfc8e1511483e02c6042"
+    },
+    {
+      "id": "8",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0xA9EB1476549fAfd992E86132d4Ab808901535bFb",
+      "targets": [
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0x4230da5d79D7503a080684564BA30dD9f0F74020",
+        "0xe96b3e15384EA4D41f7eBFdDD0001C6458094492",
+        "0x63d8423977624eaD67AF0ff33C2D1Adc62c0819E",
+        "0xdcD897B3E4204D8D30CbDaA046C4D68d6911F1fA",
+        "0xfc18FA1D054c27fE8476876fB8a65104d71cAAe9",
+        "0x89c36fFA662B05a722aebe194240B3C0337d3809",
+        "0xE07f3A2ca51b34829801dE7De27937290fEf2BD9"
+      ],
+      "values": ["0", "0", "0", "0", "0", "0", "0", "0"],
+      "signatures": ["", "", "", "", "", "", "", ""],
+      "calldatas": [
+        "0x395c62e800000000000000000000000063d8423977624ead67af0ff33c2d1adc62c0819e",
+        "0x395c62e800000000000000000000000063d8423977624ead67af0ff33c2d1adc62c0819e",
+        "0x395c62e800000000000000000000000063d8423977624ead67af0ff33c2d1adc62c0819e",
+        "0xc198f8ba",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d",
+        "0xe6eb982f0000000000000000000000007c8b9e2de6ffa465c6f717f349b3ab13ab46481d"
+      ],
+      "startBlock": "2700411",
+      "endBlock": "2758011",
+      "description": "# Supporting multiple modes in Duo Exchange\nThis proposal enables multiple modes in Duo Exchange.",
+      "state": 7,
+      "eventBlock": 2700410,
+      "transactionHash": "0xb790bdfd2c98001c9b5bf82a154222e1a1c9283181e0e582384d8886369f8c1c"
+    },
+    {
+      "id": "9",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C",
+        "0x66714DB8F3397c767d0A602458B5b4E3C0FE7dd1",
+        "0xB0de93a54dA8a2cfCDe44a06F797aB2fb9d39fB8"
+      ],
+      "values": ["0", "0", "0"],
+      "signatures": ["", "", ""],
+      "calldatas": [
+        "0x261707fa000000000000000000000000337c4f3054f091d0e2239ce09c0b112d874debf7",
+        "0x40c10f19000000000000000000000000eab23c1e3776fad145e2e3dc56bcf739f6e0a3930000000000000000000000000000000000000000000000aafa8af1644e080000",
+        "0x40c10f19000000000000000000000000eab23c1e3776fad145e2e3dc56bcf739f6e0a3930000000000000000000000000000000000000000000000aafa8af1644e080000"
+      ],
+      "startBlock": "3197673",
+      "endBlock": "3255273",
+      "description": "# Dao WETH-DETH LP Reimbursement\nRing Dao Timelock (0x337c4F3054f091D0E2239ce09c0b112D874dEBf7) received 3154 WETH-DETH LP which contains 3154 WETH and 3154 DETH.\n\nProof of transaction: <https://blastscan.io/tx/0xbbe2ff510b377da9c3cc13695720bf8b054b5b70598fd52cbf13bf94ada27e7c>\n\nThis Proposal reimburses the equivalent amount of WETH and DETH back to the sender.",
+      "state": 7,
+      "eventBlock": 3197672,
+      "transactionHash": "0x932250613ede5e5880453458988e8cace3f47c83cefdc8dfc64505ed4690c7da"
+    },
+    {
+      "id": "10",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x66714DB8F3397c767d0A602458B5b4E3C0FE7dd1",
+        "0x866f2C06B83Df2ed7Ca9C2D044940E7CD55a06d6",
+        "0x97eCAD323F63060DF37FF0Cf05350803dB4D17Bd",
+        "0x04d4fd245aCD3d7b3a1126ae27173FCa354f658B"
+      ],
+      "values": ["0", "0", "0", "0"],
+      "signatures": ["", "", "", ""],
+      "calldatas": [
+        "0x40c10f19000000000000000000000000eab23c1e3776fad145e2e3dc56bcf739f6e0a393000000000000000000000000000000000000000000000015ad8f914d75680000",
+        "0x40c10f19000000000000000000000000eab23c1e3776fad145e2e3dc56bcf739f6e0a3930000000000000000000000000000000000000000000131226f7c769d04d40000",
+        "0x40c10f19000000000000000000000000eab23c1e3776fad145e2e3dc56bcf739f6e0a3930000000000000000000000000000000000000000000000000000000025d22100",
+        "0x40c10f19000000000000000000000000eab23c1e3776fad145e2e3dc56bcf739f6e0a3930000000000000000000000000000000000000000000063639f76928704a00000"
+      ],
+      "startBlock": "3731642",
+      "endBlock": "3789242",
+      "description": "# Dao LPs Reimbursement\nRing Dao Timelock (0x337c4F3054f091D0E2239ce09c0b112D874dEBf7) receives:\n\n15960 WETH-USDB which contains 275.602 WETH and 998958 USDB.\n\n0.0002802 WETH-WBTC which contains 124.286 WETH and 6.34528 WBTC.\n\n455300 DUSD-USDB which contains 469352 DUSD, 441999 USDB.\n\nThis Proposal reimburses 399.88800 WETH, 1440957 USDB, 6.34528 WBTC and 469352 DUSD back to the sender.",
+      "state": 7,
+      "eventBlock": 3731641,
+      "transactionHash": "0x08a99fe752d29520c56f53d523d44b6e84c239f0ad5a3b29b1ee575e63f9d976"
+    },
+    {
+      "id": "11",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x866f2C06B83Df2ed7Ca9C2D044940E7CD55a06d6",
+        "0x66714DB8F3397c767d0A602458B5b4E3C0FE7dd1",
+        "0x97eCAD323F63060DF37FF0Cf05350803dB4D17Bd",
+        "0x04d4fd245aCD3d7b3a1126ae27173FCa354f658B"
+      ],
+      "values": ["0", "0", "0", "0"],
+      "signatures": ["", "", "", ""],
+      "calldatas": [
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000b121d90c5cccbe0500000",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd700000000000000000000000000000000000000000000009ca1f820cd7f7d6000",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd700000000000000000000000000000000000000000000000000000000549bfc90",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd7000000000000000000000000000000000000000000027b46536c66c8e3000000"
+      ],
+      "startBlock": "4363421",
+      "endBlock": "4421021",
+      "description": "# DAO LP Reimbursement and Boosting\nRing Dao Timelock (0x337c4F3054f091D0E2239ce09c0b112D874dEBf7) receives:\n\nBAC-USDB LP tokens contain 489,864 BAC and 383,732 USDB\n\nUSDB-DUSD LP tokens contain 3,000,000 USDB and 3,000,000 DUSD\n\nWETH-USDB LP tokens contain 2,626.74022 WETH and 10,000,000 USDB\n\nWETH-WBTC LP tokens contain 262.622973 WETH and 14.1950888 WBTC\n\nThis Proposal send 383,732 USDB for reimbursement and 13,000,000 USDB, 2889.36319 WETH, 14.1950888 WBTC and 3,000,000 DUSD for liquidity boost.",
+      "state": 7,
+      "eventBlock": 4363420,
+      "transactionHash": "0x25fb5aca5699a209a3ed297ebabf3406c9bea301f085cc967a3d68d8c8d9c846"
+    },
+    {
+      "id": "12",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x66714DB8F3397c767d0A602458B5b4E3C0FE7dd1",
+        "0xb1E4E8B433C76C1fD42Bd3099a5E5817fff69fE4",
+        "0x18755D2ceC785aB87680Edb8e117615E4B005430"
+      ],
+      "values": ["0", "0", "0"],
+      "signatures": ["", "", ""],
+      "calldatas": [
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000000a80d24677efef00000",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd700000000000000000000000000000000000000000089dd0a1f42fcf0b3cc0000",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd7000000000000000000000000000000000000000000295be96e64066972000000"
+      ],
+      "startBlock": "5317574",
+      "endBlock": "5375174",
+      "description": "# DAO LP Reimbursement and Boosting\nRing Dao Timelock (0x337c4F3054f091D0E2239ce09c0b112D874dEBf7) receives:\n\nRING-WETH LP tokens contain 50,000,000 RING and 1500 WETH\n\nBLAST-WETH LP tokens contain 166,666,667 BLAST and 1500 WETH\n\nJUICE-WETH LP tokens contains 8,200,000 JUICE and 60 WETH\n\nORBIT-WETH LP tokens contains 3,000,000 ORBIT and 40 WETH\n\nThis Proposal send 3,100 WETH, 50,000,000 RING, 166,666,667 BLAST, 8,200,000 JUICE, 3,000,000 ORBIT for liquidity boost.",
+      "state": 7,
+      "eventBlock": 5317573,
+      "transactionHash": "0xe2297af3494415cedeada6c8aa7304f8a57f921d3e44549302a7905ba0d4fcfb"
+    },
+    {
+      "id": "13",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x816D44865c61C9Ec9d0B62D7200D8E6f7B439a0B",
+        "0x30c7b9F4CD589203d250aD165651e82E338CB5bB",
+        "0x35b1cd11B684C7A9e1aA8d34e6B2a500310Ec35c"
+      ],
+      "values": ["0", "0", "0"],
+      "signatures": ["", "", ""],
+      "calldatas": [
+        "0xa9059cbb0000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd7000000000000000000000000000000000000000000005bb1aa651b5a98b1747d",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000983383fca34acbb800000",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd700000000000000000000000000000000000000000003b8e97d229a2d54800000"
+      ],
+      "startBlock": "6022949",
+      "endBlock": "6080549",
+      "description": "# DAO LP Reimbursement\nThis proposal reimburses 11,500,000 JUICE, 4,500,000 ORBIT for liquidity boost.\n\nThis proposal unlocks 433,012.701892219323380861 BAC-WETH LP.",
+      "state": 7,
+      "eventBlock": 6022948,
+      "transactionHash": "0x11c0621a08171e69ad16f1944e68b16b97b773c823029651d92b1b12c8d414ec"
+    },
+    {
+      "id": "14",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": ["0xb1E4E8B433C76C1fD42Bd3099a5E5817fff69fE4"],
+      "values": ["0"],
+      "signatures": [""],
+      "calldatas": [
+        "0xe220831d0000000000000000000000002536fe9ab3f511540f2f9e2ec2a805005c3dd800000000000000000000000000264e7bbc1011e9b740b6a46371f68b085a805c89"
+      ],
+      "startBlock": "6216586",
+      "endBlock": "6274186",
+      "description": "# Set Point Operator for fwBLAST\nThis proposal sets point operator for fwBLAST (0xb1E4E8B433C76C1fD42Bd3099a5E5817fff69fE4).",
+      "state": 7,
+      "eventBlock": 6216585,
+      "transactionHash": "0xfbe6b773bae36576f4a52b673ff59534ded4fe22962a3210fc78a46847382dac"
+    },
+    {
+      "id": "15",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x487029635814DEFE086683A3Ae52C1d35e385711",
+        "0x63E0FeF446Bbee7e9b1C3e54cB332D2acBbbD61c"
+      ],
+      "values": ["0", "0"],
+      "signatures": ["", ""],
+      "calldatas": [
+        "0xa9059cbb0000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000000aafa8af1644e080000",
+        "0xa9059cbb0000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd700000000000000000000000000000000000000000002c6ede2dc793f608c5637"
+      ],
+      "startBlock": "9901826",
+      "endBlock": "9959426",
+      "description": "# DAO LP Reimbursement\nThis proposal unlocks 3,154 DETH-WETH LP and 3,357,268.428256977823225399 DUSD-USDB LP.",
+      "state": 7,
+      "eventBlock": 9901825,
+      "transactionHash": "0xce9ad6c0cb7ad9430cecd88d4ddc17cc0d0e4eedfd160ed7225c1e42c72bd7a9"
+    },
+    {
+      "id": "16",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": ["0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C"],
+      "values": ["0"],
+      "signatures": [""],
+      "calldatas": [
+        "0x261707fa0000000000000000000000008814a2aa2384d65672c7dc0650454e56f62fba8b"
+      ],
+      "startBlock": "12713517",
+      "endBlock": "12771117",
+      "description": "# Introducing Ring Launchpad\nRing Dao is launching Ring Launchpad. The launchpad allows users to launch tokens on Blast permissionlessly.\n\n\n\nIn order to provide liquidity for launched tokens, Ring Launchpad needs to have the minter access from Few Wrapped Token.\n\n\n\nHere is the action this proposal need to take:\n\nFew Factory Core grants minter to Ring Lauchpad (0x8814a2AA2384d65672C7dC0650454E56F62fBA8B).",
+      "state": 7,
+      "eventBlock": 12713516,
+      "transactionHash": "0x98da41d178ccf45a78f9722418ef3ed8ec2c98eab9f142184141188457c00f3b"
+    },
+    {
+      "id": "17",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": ["0xC7475929FD7c2D4BDe7dE5f9DB863eA62101321C"],
+      "values": ["0"],
+      "signatures": [""],
+      "calldatas": [
+        "0x261707fa00000000000000000000000077932917ff1c6f3014f81e53cafcfb924db3a925"
+      ],
+      "startBlock": "15653643",
+      "endBlock": "15711243",
+      "description": "# Introducing Blast Centric Launchpad\nRing Dao is launching another Blast centric Launchpad. The launchpad allows users to launch tokens by pairing with Blast token.\n\nIn order to provide liquidity for launched tokens, Ring Launchpad needs to have the minter access from Few Wrapped Token.\n\nHere is the action this proposal need to take:\n\nFew Factory Core grants minter to Ring Lauchpad (0x77932917Ff1C6F3014f81E53cafCFb924Db3A925).",
+      "state": 7,
+      "eventBlock": 15653642,
+      "transactionHash": "0xcb7b454d026a608bc2051839c88dd95d19f042ffd347585ebc12659d51e233fa"
+    },
+    {
+      "id": "18",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x66714DB8F3397c767d0A602458B5b4E3C0FE7dd1",
+        "0xb1E4E8B433C76C1fD42Bd3099a5E5817fff69fE4"
+      ],
+      "values": ["0", "0"],
+      "signatures": ["", ""],
+      "calldatas": [
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000003cfc82e37e9a7400000",
+        "0x40c10f190000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd7000000000000000000000000000000000000000000f8277896582678ac000000"
+      ],
+      "startBlock": "16471909",
+      "endBlock": "16529509",
+      "description": "# DAO LPs Reimbursement and Boosting\nThis Proposal send 18,000 WETH, 300,000,000 BLAST for liquidity boost.",
+      "state": 7,
+      "eventBlock": 16471908,
+      "transactionHash": "0x93e12ba980a6c6defc69b96b2db2dca5e04fc7fc2ab4a8d8a3988e0f5b11ca6a"
+    },
+    {
+      "id": "19",
+      "contractAddress": "0xd2F37FF7eCfAcEB4De1A2bAcb8D9C539A4D6a943",
+      "proposer": "0x9336D0C82299Da0ab178271792954ADFD6f10fD7",
+      "targets": [
+        "0x9BE8a40C9cf00fe33fd84EAeDaA5C4fe3f04CbC3",
+        "0x5d571A653141bb4B16568DCBD7C4B4ff89F16A7B"
+      ],
+      "values": ["0", "0"],
+      "signatures": ["", ""],
+      "calldatas": [
+        "0xa9059cbb0000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000023db9248ab0b4db15622",
+        "0xa9059cbb0000000000000000000000009336d0c82299da0ab178271792954adfd6f10fd70000000000000000000000000000000000000000000000000003282cea03b25b"
+      ],
+      "startBlock": "17213129",
+      "endBlock": "17270729",
+      "description": "# Dao LP Unlock\nThis proposal unlocks 169333.204715572871386658 WETH-USDB LP and 0.000888598299914843 WETH-WBTC LP.",
+      "state": 7,
+      "eventBlock": 17213128,
+      "transactionHash": "0x0f9347361a560c5454791169b6325d5b345b8a96d8db6851ee4f90de776dd51a"
+    }
+  ]
+}

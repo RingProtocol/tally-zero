@@ -9,6 +9,7 @@ import { Web3Button, Web3NetworkSwitch } from "@web3modal/react";
 
 import { Icons } from "@components/Icons";
 import { buttonVariants } from "@components/ui/Button";
+import { env } from "../../env";
 
 const Skeleton = ({ className }: { className?: string }) => (
   <div aria-live="polite" aria-busy="true" className={className}>
@@ -30,6 +31,7 @@ const LoadingSkeleton = () => (
 export function ButtonNav() {
   const pathname = usePathname();
   const isExplore = pathname === "/explore";
+  const walletConnectEnabled = Boolean(env.NEXT_PUBLIC_WEB3STORAGE_PROJECT_ID);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -42,7 +44,7 @@ export function ButtonNav() {
 
   return (
     <nav>
-      {isExplore ? (
+      {isExplore && walletConnectEnabled ? (
         <div className="flex items-center gap-2 px-4 py-2">
           {loading ? (
             <div className="px-0">
@@ -56,7 +58,7 @@ export function ButtonNav() {
             </>
           )}
         </div>
-      ) : (
+      ) : !isExplore ? (
         <Link
           href="/explore"
           className={cn(
@@ -67,7 +69,7 @@ export function ButtonNav() {
           <Icons.search className="w-4 h-4 mr-2" />
           Start exploring
         </Link>
-      )}
+      ) : null}
     </nav>
   );
 }
